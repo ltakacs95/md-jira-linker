@@ -1,0 +1,33 @@
+{
+  "name": "md-jira-linker",
+  "version": "0.0.0",
+  "description": "Find JIRA Issues in markdown files and replace them with a link to the ticket.",
+  "main": "main.mjs",
+  "bin": {
+    "mdjl": "main.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "gitccl write CHANGELOG CHANGELOG.md https://github.com/ltakacs95/md-jira-linker && git add -A CHANGELOG.md && git commit --amend --no-edit",
+    "lint": "npx prettier --write . && npx standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltakacs95/md-jira-linker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ltakacs95/md-jira-linker/issues"
+  },
+  "homepage": "https://github.com/ltakacs95/md-jira-linker#readme",
+  "devDependencies": {
+    "@canthisbeautomated/commitchangelog": "^0.5.2",
+    "prettier-config-standard": "^5.0.0",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "commander": "^9.3.0"
+  }
+}
