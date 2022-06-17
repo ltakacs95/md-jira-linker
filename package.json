@@ -1,6 +1,6 @@
 {
   "name": "md-jira-linker",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Find JIRA Issues in markdown files and replace them with a link to the ticket.",
   "main": "main.mjs",
   "bin": {
