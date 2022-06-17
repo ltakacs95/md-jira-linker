@@ -13,7 +13,7 @@ program
   .description('Replace JIRA Issues with a link to them in a markdown file')
   .version(version)
   .command('replace', {isDefault: true})
-  .description('Split a string into substrings and display as an array')
+  .description('Replace JIRA Issues with a link to them in a markdown file')
   .argument('<file>', 'The .md File')
   .argument('<baseUrl>', 'The base issue url of your jira ')
   .action(async (file, baseUrl) => {
